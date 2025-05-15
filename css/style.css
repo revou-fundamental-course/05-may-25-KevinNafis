@@ -1,0 +1,275 @@
+/* styling body seluruh */
+body {
+  font-family: arial;
+  color: white;
+  background-color: black;
+}
+
+/* logo */
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo-container h3 {
+  margin-left: 10px;
+  color: white;
+  font-size: 20px;
+}
+
+/* main header , logo , navigasi */
+.main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: red;
+  padding: 10px;
+}
+
+.main-logo {
+  width: 50px;
+  height: 50px;
+  background-image: url(https://w0.peakpx.com/wallpaper/918/617/HD-wallpaper-anime-yuuki-yuuna-wa-yuusha-de-aru-yuki-yuna.jpg);
+  background-size: cover;
+  background-position: center;
+  border-radius: 50%;
+}
+
+nav {
+  display: flex;
+}
+
+nav a {
+  border: 1px solid;
+  color: black;
+  text-decoration: none;
+  padding: 8px;
+  background-color: azure;
+}
+
+section {
+  text-align: center;
+}
+/* banner form & img */
+.banner-form {
+  display: flex;
+  gap: 32px;
+}
+
+.banner-container {
+  height: 250px;
+  width: 100%;
+}
+
+.banner-img {
+  height: 250px;
+  width: 100%;
+
+  background-position: center;
+  background-size: cover;
+}
+
+.banner-img-1 {
+  background-image: url(https://lh3.googleusercontent.com/proxy/LrpHmMmwTxCmFonKnHMhkDY6GCZlN2dg8QDLWkK10_ut_-THzBXVS4fme4dItZYLBRbnDAfBdmqdA3jiYHnXlZkdJQ2I6vUGUt_sPbnoRG7xU1_WosPBnD7vXgZ_mb-xP3TBP10FpO6zwLUCeW4iF7G09OVwulc-mU-bAXjuQS2R85kMNDLOf3BnCa51Xy_ZmgP-cVVCvtu5h3tdTwQ5SyHyaYrvdvKajRdk);
+}
+.banner-img-2 {
+  background-image: url(https://casaindonesia.com/lkgallery/teaser/631afdf40196a_49_20241209164148e6cbys.jpg);
+}
+.banner-img-3 {
+  background-image: url(https://asset-2.tstatic.net/travel/foto/bank/images/Pemandangan-desa-Giethoorn-di-Belanda.jpg);
+}
+
+.banner-form form {
+  border: 1px solid;
+  height: 250px;
+  width: 100%;
+}
+
+.sub-content {
+  height: 500px;
+  align-content: center;
+}
+
+/* footer */
+footer {
+  text-align: center;
+}
+
+/* Responsive Design */
+@media only screen and (max-width: 480px) {
+  .banner-form {
+    flex-direction: column;
+  }
+}
+/* form & button */
+form {
+  text-align: center;
+  background-image: url(https://static.vecteezy.com/system/resources/previews/021/185/839/non_2x/joyful-premium-background-design-with-abstract-fluid-and-liquid-yellow-blue-pink-background-suitable-for-business-banner-formal-invitation-prestigious-gift-certificate-vector.jpg);
+  height: 250px;
+  width: 100%;
+
+  background-position: center;
+  background-size: cover;
+}
+
+button {
+  font-size: 15px; /* Ukuran teks tombol */
+  padding: 5px 5px; /* Jarak dalam tombol */
+  width: 90px; /* Lebar tombol */
+  height: 30px; /* Tinggi tombol */
+  border-radius: 5px; /* Membuat sudut tombol sedikit melengkung */
+}
+
+/* Responsif untuk tablet (max-width: 768px) */
+@media (max-width: 768px) {
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .main-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .logo-container h3 {
+    font-size: 20px;
+  }
+
+  nav {
+    margin-top: 10px;
+    justify-content: center;
+  }
+
+  nav a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+}
+
+/* Responsif untuk ponsel (max-width: 480px) */
+@media (max-width: 480px) {
+  .main-header {
+    flex-direction: column;
+    align-items: center;
+    padding: 5px;
+  }
+
+  .main-logo {
+    width: 30px;
+    height: 30px;
+  }
+
+  .logo-container h3 {
+    font-size: 16px;
+  }
+
+  nav {
+    flex-wrap: wrap; /* Link akan turun jika tidak cukup ruang */
+    justify-content: center;
+  }
+
+  nav a {
+    padding: 5px 8px;
+    font-size: 12px;
+    margin: 2px;
+  }
+}
+
+/* our Package */
+#our-package {
+  text-align: center;
+  padding: 40px 20px;
+  background-image: url(https://cdn.pixabay.com/photo/2019/10/23/08/46/airplane-4570897_960_720.jpg);
+}
+
+#our-package h2 {
+  font-size: 28px;
+  color: white;
+  margin-bottom: 30px;
+}
+
+.package-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.package-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.package-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.package-card .icon {
+  font-size: 36px;
+  margin-bottom: 15px;
+  color: #007bff;
+}
+
+.package-card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.package-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+/* Call Us konten */
+#call-us-content {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f9fa;
+}
+
+#call-us-content h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+#call-us-content p {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.whatsapp-button {
+  display: inline-flex;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #25d366;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: background-color 0.3s ease;
+}
+
+.whatsapp-button:hover {
+  background-color: #1ebc59;
+}
+
+.whatsapp-button img {
+  width: 24px;
+  height: 24px;
+  margin-right: 10px;
+}
+
+footer {
+  font-family: "Courier New", Courier, monospace;
+  background-color: rgb(57, 57, 106);
+}

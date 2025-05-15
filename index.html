@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Travelin Aja</title>
+    <!-- css eksternal -->
+    <link rel="stylesheet" href="css\style.css" />
+  </head>
+
+  <body>
+    <!-- main header -->
+    <header class="main-header">
+      <!-- logo dan teks-->
+      <div class="logo-container">
+        <div class="main-logo"></div>
+        <h3>Travelin Aja</h3>
+      </div>
+
+      <!-- navigasi -->
+      <nav>
+        <a href="#home">Home</a>
+        <a href="#our-package">Our Package</a>
+        <a href="#call-us">Call Us</a>
+      </nav>
+    </header>
+    <hr />
+
+    <!-- main konten -->
+    <main>
+      <!-- home -->
+      <section id="home">
+        <header>
+          <h1>Your Trusted Travel Agent's</h1>
+        </header>
+        <h4>Your Happiness is our Happiness</h4>
+
+        <!-- Banner & Form Content -->
+        <div class="banner-form">
+          <div class="banner-container">
+            <div class="banner-img banner-img-1"></div>
+            <div class="banner-img banner-img-2"></div>
+            <div class="banner-img banner-img-3"></div>
+          </div>
+
+          <!-- Pengisian Form -->
+          <form id="orderform">
+            <h1>Fill your order</h1>
+            <!-- input nama -->
+            <div>
+              <label for="name-input">Name</label>
+              <input
+                type="text"
+                id="name-input"
+                placeholder="Enter your name"
+                required
+              />
+            </div>
+
+            <!-- input email -->
+            <div>
+              <label for="email">Alamat Email</label>
+              <input
+                type="email"
+                id="email"
+                placeholder="email@example.com"
+                required
+              />
+            </div>
+
+            <!-- input Tujuan -->
+            <div>
+              <label for="destination">Your Destination</label>
+              <select id="destination" required>
+                <option value="">Choose Destination</option>
+                <option value="japan">Japan</option>
+                <option value="english">English</option>
+                <option value="netherlands">Netherlands</option>
+                <option value="singapore">Singapore</option>
+                <option value="french">French</option>
+                <option value="mexico">Mexico</option>
+              </select>
+            </div>
+            <div>
+              <button onclick="validasiForm()" type="button">Submit</button>
+            </div>
+          </form>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Our Package -->
+      <section id="our-package">
+        <header>
+          <h2>Our Package</h2>
+        </header>
+
+        <!-- Our Package Content -->
+        <div class="package-container">
+          <div class="package-card">
+            <div class="icon">💡</div>
+            <h3>Japan</h3>
+            <p>
+              Travel and tourism in Japan. Visit interesting cultural heritage
+              and culinary.
+            </p>
+          </div>
+          <div class="package-card">
+            <div class="icon">💡</div>
+            <h3>English</h3>
+            <p>
+              Travel and tourism in English. Visit interesting cultural heritage
+              and culinary.
+            </p>
+          </div>
+          <div class="package-card">
+            <div class="icon">💡</div>
+            <h3>Netherlands</h3>
+            <p>
+              Travel and tourism in Netherlands. Visit interesting cultural
+              heritage and culinary.
+            </p>
+          </div>
+          <div class="package-card">
+            <div class="icon">⭐</div>
+            <h3>Singapore</h3>
+            <p>
+              Travel and tourism in Singapore. Visit interesting cultural
+              heritage and culinary.
+            </p>
+          </div>
+          <div class="package-card">
+            <div class="icon">⭐</div>
+            <h3>French</h3>
+            <p>
+              Travel and tourism in French. Visit interesting cultural heritage
+              and culinary.
+            </p>
+          </div>
+          <div class="package-card">
+            <div class="icon">⭐</div>
+            <h3>Mexico</h3>
+            <p>
+              Travel and tourism Mexico. Visit interesting cultural heritage and
+              culinary.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <hr />
+
+      <!-- Call Us  -->
+      <section id="call-us">
+        <header>
+          <h1>Call Us</h1>
+        </header>
+
+        <!-- Call Us Content -->
+        <div id="call-us-content">
+          <p>Contact us for more information</p>
+          <a
+            href="https://wa.me/62895350206666"
+            class="whatsapp-button"
+            target="_blank"
+          >
+            <img
+              src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg"
+              alt="WhatsApp"
+            />
+            WhatsApp Us
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <hr />
+
+    <!-- Footer -->
+    <footer id="call-us">
+      <h2>Travelin Aja</h2>
+      <span> &copy;KevinNafis2025 </span>
+    </footer>
+
+    <!-- js external -->
+    <script src="js\script.js"></script>
+  </body>
+</html>
